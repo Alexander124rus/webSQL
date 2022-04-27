@@ -1,7 +1,13 @@
 <!DOCTYPE html>    
 <html>    
 <head>    
-    <title>Open DataBase</title>    
+    <title>Open DataBase</title>   
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.4.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.4.1-dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/js/bootstrap.js">
+    <link rel="stylesheet" href="css/index.css">
+
     <script>
         function DataBase(name) {
         this.dbName = name;
@@ -184,26 +190,56 @@
     });
     </script>   
 </head>    
-<body>    
-    <div class="app">
-        <div class="add-block">
-          <div><input type="text" id="add-name" placeholder="имя"></div>
-          <div><input type="text" id="add-surname" placeholder="фамилия"></div>
-          <div><input type="text" id="add-mail" placeholder="e-mail"></div>
-          <div><input type="text" id="add-phone-number" placeholder="телефон"></div>
-          <div><input type="button" id="add" value="+"></div>
-          <div></div>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo col-md-12 col-xs-12">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div> 
+            <div class="row" >
+                <div class="header col-md-12 col-xs-12">
+                    <img src="img/header.png" alt="">
+                </div> 
+            </div> 
         </div>
-        <div class="caption-table">
-          <div>Имя</div>
-          <div>Фамилия</div>
-          <div>Mail</div>
-          <div>Телефон</div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="app center-block">
+                    <div class="add-block">
+                      <div><input type="text" id="add-name" placeholder="имя"></div>
+                      <div><input type="text" id="add-surname" placeholder="фамилия"></div>
+                      <div><input type="text" id="add-mail" placeholder="e-mail"></div>
+                      <div><input type="text" id="add-phone-number" placeholder="телефон"></div>
+                      <div><input type="button" id="add" value="+"></div>
+                      <div></div>
+                    </div>
+                    <div class="caption-table">
+                      <div>Имя</div>
+                      <div>Фамилия</div>
+                      <div>Mail</div>
+                      <div>Телефон</div>
+                    </div>
+                    <div class="table-block">
+                      <div class="table"></div>
+                    </div>
+                    <div class="clear-btn-block"><button id="btnClear">очистить</button></div>
+                </div>
+            </div>
         </div>
-        <div class="table-block">
-          <div class="table"></div>
-        </div>
-        <div class="clear-btn-block"><button id="btnClear">очистить</button></div>
-      </div>   
+        
+    </section>
+    <footer>
+
+    </footer>
+     
+    <!--div id="navbar" class="collapse navbar-collapse">
+          
+        
+    </div-->    
+       
 </body>    
 </html>  
